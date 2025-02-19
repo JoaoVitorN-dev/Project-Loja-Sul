@@ -3,6 +3,7 @@
     "name": "loja-do-sul",
     "slug": "loja-do-sul",
     "version": "1.0.0",
+    "scheme": "loja-do-sul",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -23,6 +24,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
