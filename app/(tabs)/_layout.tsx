@@ -5,12 +5,12 @@ export default function tabLayout() {
     return (
         <Tabs screenOptions={{tabBarActiveTintColor: "#00F", headerShown: true}}>
             <Tabs.Screen name="home" options={{
-                title: "Inicio",
+                title: "Início",
                 tabBarIcon: ({ color }) => <FontAwesome size={28} name="home" color={color} />
             }}
             />
 
-            {/* <Tabs.Screen name="categories" options={{
+             <Tabs.Screen name="categories" options={{
                 title: "Categorias",
                 tabBarIcon: ({ color }) => <FontAwesome size={28} name="archive" color={color} />
             }}
@@ -18,9 +18,10 @@ export default function tabLayout() {
 
             <Tabs.Screen name="about" options={{
                 title: "Sobre mim",
-                tabBarIcon: ({ color }) => <FontAwesome size={28} name="user" color={color} />
+                tabBarIcon: ({ color }) => <FontAwesome size={28} name="user" color={color}/>,
+                headerShown: false
             }}
-            /> */}
+            /> 
         </Tabs>
     )
 }
